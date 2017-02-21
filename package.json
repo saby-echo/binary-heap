@@ -1,0 +1,22 @@
+{
+  "name": "ts-binary-heap",
+  "version": "1.0.2",
+  "description": "Binary Heap",
+  "repository": "saby-echo/binary-heap",
+  "main": "lib/index",
+  "scripts": {
+    "prepublish": "npm test",
+    "build": "rimraf lib && tsc",
+    "test": "npm run build && ava lib/spec.js"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": "Sabyasachi Bhattacharjee<saby-echo@github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "rimraf": "^2.6.0",
+    "typescript": "^2.1.6"
+  }
+}
